@@ -1,9 +1,19 @@
+
+html{
+    margin: 0;
+    padding: 0;
+}
 body{
     margin: 0;
     padding: 0;
-    background: url(./paper.jpg)repeat none;
-    height: 100vh;
-    width: 100vw;
+}
+
+.background{
+    margin: 0;
+    padding: 0;
+    white-space: none;
+    background: url(./paper.jpg);
+   height: 70vh;
     position: absolute;
 }
 
@@ -11,8 +21,8 @@ body{
 .innerSection{
     width: 40vw;
     height: 40vh;
-    background: white;
+    background: black;
     position: absolute;
-    margin-left: 15vw;
-    margin-top: 15vh;
+    margin-left: 30vw;
+    margin-top: 25vh;
 }

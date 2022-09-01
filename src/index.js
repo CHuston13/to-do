@@ -29,8 +29,8 @@ div2.appendChild(addButton);
 
 
 //styling
-element.classList.add('background');
-div2.classList.add('innerSection');
+element.classList.add('background','html','body');
+div2.classList.add('innerSection','*');
    
   
   
