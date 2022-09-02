@@ -19,10 +19,20 @@ body{
 
 
 .innerSection{
-    width: 40vw;
-    height: 40vh;
+    width: 60vw;
+    height: 60vh;
     background: black;
     position: absolute;
-    margin-left: 30vw;
+    margin-left: 20vw;
     margin-top: 25vh;
+}
+
+.homebutton{
+    background:transparent;
+    background-repeat: no-repeat;
+    border: none;
+    color: aqua;
+    margin-top: 5vh;
+    margin-left: 5vw;
+
 }
