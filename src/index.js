@@ -4,7 +4,7 @@ import './style.css';
 import Icon from './paper.jpg'
 import createPrompt from './secondary';
 
- function createBackground() {
+ export default function createBackground() {
  const element = document.createElement('div');
  element.id='first-born';
  const div2 = document.createElement('div');
