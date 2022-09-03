@@ -2,15 +2,18 @@
 
 import './style.css';
 import Icon from './paper.jpg'
-
-
+import createPrompt from './secondary';
 
  function createBackground() {
  const element = document.createElement('div');
+ element.id='first-born';
  const div2 = document.createElement('div');
+ div2.id='second-born';
+
  const addButton = document.createElement('button');
  const homeButton = document.createTextNode('Home');
  const newButton = document.createElement('button');
+
  newButton.innerHTML='Add';
  const myIcon = new Image();
 myIcon.src = Icon;
@@ -43,7 +46,7 @@ addButton.classList.add('homebutton');
   
   
   //onclick
-  newButton.onclick=createTasks;
+  newButton.onclick=createPrompt;
   
   
   
@@ -54,7 +57,6 @@ addButton.classList.add('homebutton');
 
 
 
- 
  }
 
  
@@ -62,10 +64,7 @@ addButton.classList.add('homebutton');
 
 
 
- function createTasks(){
-  const person = prompt("enter");
- }
-
+ 
 
 
 
