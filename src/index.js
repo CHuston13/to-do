@@ -2,7 +2,7 @@
 
 import './style.css';
 import Icon from './paper.jpg'
-import createPrompt from './secondary';
+
 
 function createBackground() {
  const element = document.createElement('div');
@@ -13,6 +13,12 @@ function createBackground() {
  const addButton = document.createElement('button');
  const homeButton = document.createTextNode('Home');
  const newButton = document.createElement('button');
+ const input = document.createElement('input');
+ input.id='first';
+ input.setAttribute('type','text');
+ const date = document.createElement('input');
+ date.id='second';
+ date.setAttribute('type','date');
 
  newButton.innerHTML='Add';
  const myIcon = new Image();
@@ -34,6 +40,8 @@ element.appendChild(myIcon);
 div2.appendChild(addButton);
 addButton.appendChild(homeButton);
 div2.appendChild(newButton);
+div2.appendChild(input);
+div2.appendChild(date);
 
 
 
@@ -44,9 +52,6 @@ addButton.classList.add('homebutton');
 
    
   
-  
-  //onclick
-  newButton.onclick=createPrompt;
   
   
   
