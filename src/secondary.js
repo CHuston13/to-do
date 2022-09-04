@@ -2,9 +2,10 @@
 
 
 
+
 export default function createPrompt(){
     const div3 = document.createElement('div');
-    div3.id='container';
+    div3.id='containers';
     const input = document.createElement('input');
     input.id='first';
     input.setAttribute('type','text');
@@ -14,7 +15,7 @@ export default function createPrompt(){
     const pull = document.getElementById('second-born');
     const newBut = document.createElement('button');
     newBut.innerHTML='submit';
-    newBut.onclick=combined;
+    newBut.onclick=submitButton;
 
 
 
@@ -31,27 +32,9 @@ export default function createPrompt(){
 
 
    function submitButton(){
-    const remove = document.getElementById('container');
+    const remove = document.getElementById('containers');
     remove.innerHTML='';
    }
 
-
-   function domAppend(){
-    var con = document.getElementById('container');
-    var pulling = document.getElementById('first').value;
-    var pulled = document.getElementById('second').value;
-    con.appendChild(pulling);
-    con.appendChild(pulled);
-
-
-    return con;
-   }
-
-
-   function combined(){
-   
-    domAppend();
-    submitButton();
-   }
 
    
